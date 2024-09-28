@@ -1,0 +1,7 @@
+// js validation without html validation, function , message error
+// email => type = text, 
+// fname => letter min 3 max 10, 
+// password
+// phone 11 digit in egypt
+
+required--> الخميس 9 صباحا

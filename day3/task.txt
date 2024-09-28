@@ -1,0 +1,2 @@
+1- dynamic table --> bounce
+2- todolist --> required

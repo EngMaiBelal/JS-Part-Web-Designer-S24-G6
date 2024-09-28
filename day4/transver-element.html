@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font{
+            font-size: 30px
+        }
+        .myStyle{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="demo" class="font">
+        <!-- comment -->
+        <span class="one">one</span>
+        <!-- comment -->
+        <span class="two">two</span>
+        <!-- comment -->
+        <span class="three">three</span>
+        <button ondblclick="removeParent()" class="btn"> Click </button>
+    </div>
+
+    <script>
+        let span2 = document.querySelector(".two");
+        // console.log(span2.parentElement);
+        // console.log(span2.previousSibling);
+        // console.log(span2.nextElementSibling);
+
+        let btn =document.querySelector("button");
+        btn.onclick = function(){
+            // btn.parentElement.remove();
+            let div = document.getElementById("demo");
+            // div.classList.add("myStyle");
+            // div.classList.remove("font");
+            div.classList.toggle("myStyle");
+        }
+       function removeParent(){
+            btn.parentElement.remove();
+           
+        }
+       
+    </script>
+</body>
+</html>

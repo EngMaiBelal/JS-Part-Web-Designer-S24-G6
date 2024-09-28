@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p> first</p>
+        <p>second </p>
+        <button class="btn">Click</button>
+    </div>
+
+    <script>
+        // js --> hoisting --> function , var --> "use strict"
+        // console.log(x);
+        // event, addeventlistener
+        let btn = document.querySelector(".btn")
+        // btn.addEventListener("click", myFun); // two fun for the same event on the same element
+        // btn.addEventListener("click", myFun2);
+        btn.onclick = myFun; // override
+        btn.onclick = myFun2;
+        
+        function myFun(){
+            btn.parentElement.style.backgroundColor = "red";
+        }
+        function myFun2(){
+            btn.parentElement.style.fontSize= "30px";
+        }
+        // let x = 2;
+
+        // add event to element still donot create
+    </script>
+</body>
+</html>
